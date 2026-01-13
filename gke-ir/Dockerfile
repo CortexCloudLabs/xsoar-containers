@@ -10,7 +10,6 @@ RUN apt-get update && apt-get install -y \
 # Copy files to a standard path in the container
 COPY docker-entrypoint.sh /usr/local/bin/
 COPY quarantine-policy.yaml /usr/local/bin/
-
 COPY containment.sh /usr/local/bin/
 
 # Make the scripts executable
